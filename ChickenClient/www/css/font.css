@@ -1,0 +1,8 @@
+@charset "utf-8";
+@font-face{
+  font-family: 'UnGungSeoWeb';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/UnGungseoCompact.eot'); 
+  src: url('../font/UnGungseoCompact.woff') format('woff');
+}

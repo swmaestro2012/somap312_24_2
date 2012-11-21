@@ -1,0 +1,8 @@
+body {
+  font-family: "UnGungSeoWeb";
+}
+
+a:link, a:visited {
+  color: #000 !important;
+  text-decoration:none;
+}

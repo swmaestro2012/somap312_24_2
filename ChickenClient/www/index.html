@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no,
+     initial-scale=1, maximum-scale=1, minimum-scale=1,
+     width=device-width, height=device-height,
+     target-densitydpi=device-dpi" />
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css"
+    type="text/css" charset="utf-8"/>
+
+    <link rel="stylesheet" href="css/font.css"
+    type="text/css" charset="utf-8"/>
+
+    <style>
+      #main {
+      background: url('img/main.jpg') no-repeat;
+      display: block;
+      width: 320px;
+      height: 480px;
+      color: #black;
+      font-family: "UnGungSeoWeb";
+      }
+
+      #loader {
+      float:right;
+      padding: 20px;
+      }
+
+      body {
+        margin: 0px;
+      }
+
+    </style>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <script>
+      
+      $(document).ready( function() {
+
+      window.a = 20;
+      
+      onTimer = function() {
+
+        if(window.a == 100) {
+          window.location="page1.html"
+        }
+        else {
+          $('#count').text(window.a);
+        
+          window.a += 20;
+        }
+
+        window.setTimeout( onTimer, 500 );
+      }
+
+      window.setTimeout( onTimer, 500 );
+      
+      });
+      
+    </script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="loader">
+        <span> 로딩 중 .... </span>
+        <span id="count"> 0 </span>
+        <span> % </span>
+      </div>
+    </div>
+  </body>
+</html>
